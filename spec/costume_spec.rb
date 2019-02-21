@@ -48,5 +48,4 @@ describe "Costume" do
     expect(stegosaurus.updated_at.to_datetime ===  Time.now.utc.to_datetime).to eq(true)
     expect(stegosaurus.updated_at.to_datetime).to be > stegosaurus.created_at.to_datetime
   end
-
 end

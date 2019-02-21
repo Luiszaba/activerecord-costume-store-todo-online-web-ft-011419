@@ -12,13 +12,13 @@
 class CreateCostumes < ActiveRecord::Migration[5.1]
   
   def change
-    create_table :costumes do |c|
-      c.string :name,
-      c.float :price,
-      c.string :image_url,
-      c.string :size,
-      c.timestamp :created_at,
-      c.timestamp :updated_at
+    create_table costumes do |c|
+      c.string name,
+      c.float price,
+      c.string image_url,
+      c.string size,
+      c.timestamp created_at,
+      c.timestamp updated_at
     end
   end
 end

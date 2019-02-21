@@ -10,8 +10,8 @@ class CreateHauntedHouses < ActiveRecord::Migration[4.2]
       t.float :price
       t.boolean :friendly_?
       t.string :description
-      t.timestamp :created_by,
-      t.timestamp :updated_by
+      t.timestamp :created_at,
+      t.timestamp :updated_at
     end
   end
 end

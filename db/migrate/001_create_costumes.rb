@@ -15,7 +15,7 @@ class CreateCostumes < ActiveRecord::Migration[5.1]
     create_table costumes do |c|
       c.string :name,
       c.float :price,
-      c.string :url,
+      c.string :image_url,
       c.string :size,
       c.datetime :created,
       c.datetime :updated

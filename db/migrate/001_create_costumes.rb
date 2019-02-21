@@ -12,7 +12,7 @@
 class CreateCostumes < ActiveRecord::Migration[5.1]
   
   def change
-    create_table costume do |c|
+    create_table costumes do |c|
       c.string :name,
       c.float :price,
       c.string :url,

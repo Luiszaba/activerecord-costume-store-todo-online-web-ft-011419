@@ -7,4 +7,6 @@ class Costume < ActiveRecord::Base
     002_create_costumes costumes do |c|
       c.string :name,
       c.integer :price,
-      c.
+      c.url :url
+    end
+  end

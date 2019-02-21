@@ -9,6 +9,13 @@
 # value types according to the spec
 
 
-class CreateCostume < ActiveRecord::Migration
+class CreateCostumes < ActiveRecord::Migration
   
-  
+  def change
+    002_create_costumes costumes do |c|
+      c.string :name,
+      c.integer :price,
+      c.url :url
+    end
+  end
+end

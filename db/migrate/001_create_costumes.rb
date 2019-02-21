@@ -15,7 +15,8 @@ class CreateCostumes < ActiveRecord::Migration
     create_table costumes do |c|
       c.string :name,
       c.float :price,
-      c.string :url
+      c.string :url,
+      c.integer :size
     end
   end
 end
